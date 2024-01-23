@@ -8,3 +8,17 @@ html, body {
 h1 {
     font-size: 2em;
 }
+
+svg {
+    border: solid 2px red; 
+}
+.col-6 {
+    border: solid 2px black; 
+}
+
+/* Estilo para ajustar las imágenes dentro de las columnas */
+.image-fit {
+    width: 50%; /* Establece el ancho de las imágenes al 50% de su contenedor padre */
+    height: 100%; /* Establece la altura de las imágenes al 100% de la altura de su contenedor */
+    object-fit: cover; /* Ajusta las imágenes para cubrir todo el espacio disponible, recortando el exceso */
+}
