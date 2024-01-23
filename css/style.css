@@ -8,3 +8,31 @@ html, body {
 h1 {
     font-size: 2em;
 }
+
+.image-fit {
+    width: 100%; /* Establece el ancho de las imágenes al 50% de su contenedor padre */
+    height: 100%; /* Establece la altura de las imágenes al 100% de la altura de su contenedor */
+    object-fit: cover; /* Ajusta las imágenes para cubrir todo el espacio disponible, recortando el exceso */
+}
+
+/* Contenedor de animación para el ratón */
+ .animation {
+    position: absolute;
+    top: 68%; /* Posiciona el ratón en el centro vertical del contenedor */
+     transform: translateY(-50%); /* Centra el ratón verticalmente */
+     width: 40%; /* Ancho necesario para la animación */
+     height: 100%; /* Altura necesaria para la animación */
+     animation: slide-in 5s infinite alternate; /* Aplica la animación */
+ }  
+
+/* Keyframes para la animación de deslizamiento */
+ @keyframes slide-in {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+        /* Llega hasta el final */
+    }
+}  /* K
