@@ -22,17 +22,17 @@ h1 {
      transform: translateY(-50%); /* Centra el ratón verticalmente */
      width: 40%; /* Ancho necesario para la animación */
      height: 100%; /* Altura necesaria para la animación */
-     animation: slide-in 5s infinite alternate; /* Aplica la animación */
+     animation: slide-in 5s linear infinite;
  }  
 
 /* Keyframes para la animación de deslizamiento */
  @keyframes slide-in {
     0% {
-        left: -100%;
+        left: 100%;
     }
 
     100% {
-        left: 100%;
+        left: -100%;
         /* Llega hasta el final */
     }
 }  /* K
